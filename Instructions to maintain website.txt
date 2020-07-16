@@ -1,0 +1,77 @@
+Maintainance
+php artisan down
+
+BE back
+php artisan up
+
+Clear Cache
+config:cache
+
+
+Create Project
+composer create-project --prefer-dist laravel/laravel Laravel
+
+
+php artisan serve(Start the application)
+http://127.0.0.1:8000
+
+
+
+Bootstrap(CSS and JS)
+composer require laravel/ui
+npm run
+npm run dev
+
+
+To change database name
+1)change in .env file
+2)php artisan cache:clear
+3)php artisan config:clear
+
+
+ php artisan tinker(to interact with database)
+ 
+ $post=new App\Post();//create an instance
+ $post->title='post two';
+  $post->body='Thios is post body 2'
+  $post->save()
+  
+  Connecting to database and migration
+  1)create model - php artisan make:model Post -m
+  2) create controller -php artisan make:controller PostsController
+  3)change  .env file, change database name
+  4)   "use Schema"  in  AppServiceProvider
+  
+  
+  Make a controller
+  php artisan make:controller PostsController --resource
+  php artisan make:migration add_phone_field_to_users_table --table=users
+  
+  
+  
+  Generating login and register
+  
+  php artisan ui:auth
+  php artisan migrate
+  
+  
+  
+  For CSS
+  Step 1:
+
+Download nodejs
+Install nodejs in your pc
+Step 2:
+
+then open your project root and command
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm run dev
+  
+  
+  
+  
+
+
+
